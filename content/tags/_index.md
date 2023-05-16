@@ -1,5 +1,5 @@
 ---
-title: Tags
+title: 标签
 menu:
   main:
     parent: blog

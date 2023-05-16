@@ -1,11 +1,10 @@
 mainSections:
   - blog
   - posts
-  - news
 
 # titleSeparator: '|' # Title separator. Default to -.
 
-description: An extreme fast, responsive and feature-rich blog theme for Hugo
+description:
 keywords: Hugo, Bootstrap, Blog Theme
 # images:
 #   - site-feature-image.jpg
@@ -13,13 +12,13 @@ keywords: Hugo, Bootstrap, Blog Theme
 # metaRobots: noindex, nofollow # Default value for Meta Tag robots
 # metaRobots:  # disable Meta Tag robots
 
-# logo: images/logo.png # Logo image. Default to images/logo.webp.
+logo: false # Logo image. Default to images/logo.webp.
 # logo: false # Disable Logo
-brand: HBS
+brand: Andy's Blog
 
-palette: purple # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette: indigo # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # Available palettes. Default to ALL. Empty array means disable.
-# palettes:
+palettes: false
 #  - blue
 #  - blue-gray
 #  - brown
@@ -49,7 +48,7 @@ googleAdsense:
 # breadcrumb: false # Disable breadcrumb
 # breadcrumbDivider: > # Breadcrumb divider
 # diagram: true
-# socialShare: false # disable social network sharing
+socialShare: false # disable social network sharing
 # searchBar: false # disable search-bar
 
 # poweredBy: false # Whether to show powered by.
@@ -67,7 +66,7 @@ googleAdsense:
 taxonomyPostCount: 20 # The number of taxonomy's posts. Turn off by setting it to false.
 countTaxonomyPosts: true # Count posts of taxonomy.
 
-# sidebarTaxonomies: [categories, tags, series] # The order of taxonomies on the sidebar.
+sidebarTaxonomies: [categories, tags, series, archives] # The order of taxonomies on the sidebar.
 
 # pinnedPost: false # Turn on/off pinned posts.
 pinnedPostCount: 3 # The number of pinned posts.
@@ -113,7 +112,7 @@ post:
   numberifyHeadingsSeparator: . # The separator between of number and headings.
   # tocStyleType: decimal # The TOC's CSS list-style-type property.
   # imageTitleAsCaption: true
-  # panel: false # Disable the post panel.
+  panel: false # Disable the post panel.
   # nav: false # Disable post navigations.
   # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
   # It supports only of the manual summaries spliting via <!--more-->.
@@ -170,10 +169,10 @@ creativeCommons:
 
 # See https://giscus.app
 giscus:
-  repo: "razonyang/hugo-theme-bootstrap-skeleton" # required.
-  repoId: "R_kgDOHJi95g" # required.
+  repo: "m430/m430.github.io" # required.
+  repoId: "R_kgDOJiE7bA" # required.
   category: "General" # required.
-  categoryId: "DIC_kwDOHJi95s4CTy6q" # required.
+  categoryId: "DIC_kwDOJiE7bM4CWfPx" # required.
   # theme: "dark" # Default to auto.
   # mapping: "title" # Default to pathname.
   # inputPosition: "bottom" # Default to top.
@@ -213,11 +212,11 @@ reward:
 #share:
   #addThis:  # AddThis pubid.
 
-#actionsPanel:
-  # disabled: true
+actionsPanel:
+  disabled: true
 
 # Comment or remove this settings to disable font size switcher.
-fontSize:
+# fontSize:
   # extraSmall: .8rem
   # small: .9rem
   # large: 1.1rem
@@ -226,7 +225,7 @@ fontSize:
 pwa:
   manifest:
     # name:  # Default to site title.
-    short_name: HBS
+    short_name: Andy's Blog
     # display: fullscreen # Default to standalone.
     # description:  # Default to site description.
     # theme_color: 
@@ -248,17 +247,18 @@ contact:
     # siteKey: ""
 
 repo:
-  url: https://github.com/razonyang/hugo-theme-bootstrap-skeleton
+  url: https://github.com/m430/m430.github.io
   branch: main
   # subPath: exampleSite
   # dateFormat: 02/01/2006, 15:04:05 PM
 
 topAppBar:
+  colorToggle: false
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
   social:
-    github: razonyang/hugo-theme-bootstrap
-    patreon: razonyang
-    paypal: razonyang
+    # github: m430
+    # patreon: razonyang
+    # paypal: razonyang
 
 #docs:
   # nav:

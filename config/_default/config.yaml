@@ -1,14 +1,12 @@
 baseURL: /
-title: Hugo Bootstrap Skeleton
-theme: github.com/razonyang/hugo-theme-bootstrap
-copyright: 'Copyright © 2016-{year} Razon Yang. All Rights Reserved.'
-defaultContentLanguage: en
-# hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
+title: Andy's blog
+theme: hugo-theme-bootstrap
+copyright: 'Copyright © 2022-{year} Andy Zheng. All Rights Reserved.'
+defaultContentLanguage: zh-hans
+hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
 # defaultContentLanguageInSubdir: true
 # disableLanguages:
-#  - fr
-#  - zh-cn
-#  - zh-tw
+#  - en
 paginate: 10
 # paginatePath: page
 enableRobotsTXT: true
@@ -22,16 +20,15 @@ blackfriday:
 
 taxonomies:
   category: categories
-  series: series
+  # series: series
   tag: tags
-  authors: authors
+  # authors: authors
 
 build:
   writeStats: true
 
 permalinks:
-  news: /news/:year/:month/:title/
-  blog: /blog/:year/:month/:title/
+  blog: /blog/:year/:month/:filename/
 
 # module:
   # proxy: https://goproxy.cn
