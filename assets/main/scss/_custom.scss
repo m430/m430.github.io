@@ -1,0 +1,7 @@
+.sidebar {
+  @if $fixedSidebar {
+    @include media-breakpoint-up(lg) {
+      overflow-y: initial;
+    }
+  }
+}

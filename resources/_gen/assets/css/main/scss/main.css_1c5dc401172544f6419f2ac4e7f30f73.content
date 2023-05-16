@@ -16023,6 +16023,12 @@ table {
   background: var(--hbs-scrollbar-corner-bg);
 }
 
+@media (min-width: 992px) {
+  .sidebar {
+    overflow-y: initial;
+  }
+}
+
 /*!purgecss end ignore*/
 .accordion {
   --hbs-accordion-active-color: var(--hbs-primary);
