@@ -203,8 +203,8 @@ search:
   # debug: true
 
 reward:
-  alipay: images/reward/alipay.png
-  wechat: images/reward/wechat.png
+  alipay: https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305162341654.png?x-oss-process=image/quality,q_80/format,webp
+  wechat: https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305162351183.png?x-oss-process=image/quality,q_80/format,webp
   #paypal: images/reward/paypal.png
   #patreon: images/reward/patreon.png
   #liberapay: images/reward/liberapay.png
@@ -217,7 +217,7 @@ actionsPanel:
 
 # Comment or remove this settings to disable font size switcher.
 # fontSize:
-  # extraSmall: .8rem
+#   extraSmall: .8rem
   # small: .9rem
   # large: 1.1rem
   # extraLarge: 1.2rem

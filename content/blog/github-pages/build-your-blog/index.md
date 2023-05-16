@@ -1,11 +1,13 @@
 ---
 # type: docs 
 title: 使用Github Page搭建个人博客
+summary: Github Pages是Github提供的免费静态网站托管服务，可以很方便的用于个人博客搭建、项目展示页搭建，甚至是初创团队的产品展示页等都是可以的。
 date: 2023-05-15T16:15:25+08:00
 featured: false
 draft: false
 comment: true
 toc: true
+math: true
 reward: true
 pinned: false
 carousel: false
@@ -21,10 +23,7 @@ images: [
 ---
 ## Github Pages介绍
 ---
-
 Github Pages是Github提供的免费静态网站托管服务，可以很方便的用于个人博客搭建、项目展示页搭建，甚至是初创团队的产品展示页等都是可以的。
-
-<!-- more -->
 
 ## 创建Github Pages仓库
 ---
