@@ -43,9 +43,12 @@ images: [
 
 ---
 
+### 2.1 安装Giscus
 首先在[Github Marketplace](https://github.com/marketplace)上搜索giscus，然后按照步骤进行安装：
 
 ![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171618505.png?x-oss-process=image/quality,q_80/format,webp)
+
+### 2.2 生成配置脚本
 
 安装好之后，直接进入[giscus](https://giscus.app/zh-CN)官网进行配置。这里根据官网的配置提示进行操作即可，选择配置的仓库需符合条件：
 
@@ -74,6 +77,7 @@ images: [
         async>
 </script>
 ```
+### 2.3 配置Giscus到主题
 
 把这个脚本嵌入到页面中使用 `.giscus` 和 `.giscus-frame` 选择器来自定义容器布局。上一篇中我使用的主题是[HBS](https://hbs.razonyang.com/)。就不需要这么麻烦去做嵌入了，主题已经帮你做好了，你只需要把上面脚本中的信息复制到`config/_default/params.yaml`中就行了，如下：
 
