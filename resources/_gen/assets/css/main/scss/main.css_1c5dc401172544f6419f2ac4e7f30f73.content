@@ -15425,60 +15425,6 @@ main {
   text-decoration: underline;
 }
 
-.post-content {
-  counter-reset: h2Counter;
-}
-
-.post-content h2[data-numberify], .post-content [data-numberify].h2 {
-  counter-reset: h3Counter;
-  /* stylelint-disable-line */
-}
-
-.post-content h2[data-numberify]::before, .post-content [data-numberify].h2::before {
-  display: inline;
-  counter-increment: h2Counter;
-  content: counter(h2Counter) ". ";
-}
-
-.post-content h3[data-numberify], .post-content [data-numberify].h3 {
-  counter-reset: h4Counter;
-  /* stylelint-disable-line */
-}
-
-.post-content h3[data-numberify]::before, .post-content [data-numberify].h3::before {
-  display: inline;
-  counter-increment: h3Counter;
-  content: counter(h2Counter) "." counter(h3Counter) ". ";
-}
-
-.post-content h4[data-numberify], .post-content [data-numberify].h4 {
-  counter-reset: h5Counter;
-  /* stylelint-disable-line */
-}
-
-.post-content h4[data-numberify]::before, .post-content [data-numberify].h4::before {
-  display: inline;
-  counter-increment: h4Counter;
-  content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) ". ";
-}
-
-.post-content h5[data-numberify], .post-content [data-numberify].h5 {
-  counter-reset: h6Counter;
-  /* stylelint-disable-line */
-}
-
-.post-content h5[data-numberify]::before, .post-content [data-numberify].h5::before {
-  display: inline;
-  counter-increment: h5Counter;
-  content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) "." counter(h5Counter) ". ";
-}
-
-.post-content h6[data-numberify]::before, .post-content [data-numberify].h6::before {
-  display: inline;
-  counter-increment: h6Counter;
-  content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) "." counter(h5Counter) "." counter(h6Counter) ". ";
-}
-
 .post-navs {
   flex-wrap: wrap;
 }

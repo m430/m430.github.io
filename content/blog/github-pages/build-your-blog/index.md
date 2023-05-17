@@ -21,18 +21,18 @@ images: [
   "https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305161623185.png?x-oss-process=image/quality,q_80/format,webp"
 ]
 ---
-## Github Pages介绍
+## 一、Github Pages介绍
 ---
 Github Pages是Github提供的免费静态网站托管服务，可以很方便的用于个人博客搭建、项目展示页搭建，甚至是初创团队的产品展示页等都是可以的。
 
-## 创建Github Pages仓库
+## 二、创建Github Pages仓库
 ---
 
 首先，你需要在[Github](https://github.com)上创建一个仓库，个人博客仓库必须命名为`<username>.github.io`，这个非常重要。
 
 ![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305161613203.png?x-oss-process=image/quality,q_80/format,webp)
 
-## 静态生成站点
+## 三、静态生成站点
 
 ---
 
@@ -45,7 +45,7 @@ Github Pages是Github提供的免费静态网站托管服务，可以很方便�
 
 我个人比较喜欢用[Hugo](https://gohugo.io/)，它是用Go语言开发的静态生成框架，编译速度很快，框架生态、主题都很丰富。这里你可以根据个人爱好进行选择。
 
-### 创建站点
+### 3.1 创建站点
 
 参考Hugo官网直接创建一个站点：
 
@@ -76,7 +76,7 @@ git init
 git remote add origin <your_blog_repo_github_url>
 ```
 
-### 选择一个主题使用
+### 3.2 选择一个主题使用
 
 你可以到[Hugo 主题](https://themes.gohugo.io/)下面去选择一个你喜欢的主题，主题非常丰富，这里我个人选择了主题[HBS](https://hbs.razonyang.com/)
 
@@ -114,13 +114,13 @@ hugo server
 
 看起来还是很精美的有没有。后续针对主题自定义就不在这里展开了，后面可以单独开一篇来讲。
 
-## 通过Github Action配置自动部署
+## 四、通过Github Action配置自动部署
 
 ---
 
 本地预览成功后，我们最终希望发布到互联网上，让其他人看到，这个部署的过程可以通过Github Action直接自动化完成。
 
-### 配置Github Pages的Action
+### 4.1 配置Github Pages的Action
 
 进入`<username>.github.io`仓库的`Settings>Pages`页面，然后再`Build and deployment`下配置发布源为Github Actions，并选择Hugo的预设Action。如图所示：
 
@@ -128,7 +128,7 @@ hugo server
 
 配置好以后会再你的站点仓库下生成`.github/hugo.yml`文件，里面定义了自动化部署流程，新手不需要有任何改动，直接将它拉取到本地的仓库。
 
-### 推送站点
+### 4.2 推送站点
 
 最后把本地的站点推送到Github即可。推送后会自动触发Github Actions的流程，在仓库的Pages配置页面下可以看到：
 
@@ -136,7 +136,7 @@ hugo server
 
 恭喜你，到这里，站点已经可以在互联网上被所有人访问了，点击`Visit site`，就可以访问自己的站点了。默认的站点域名就是仓库名`https://<username>.github.io`**。**
 
-## 总结
+## 五、总结
 
 Github Pages部署个人站点非常方便，配合静态工具生成框架，是个人搭建独立博客非常好的选择，如果你想搭建一个属于自己的个性独立博客，非常推荐这种方式。
 

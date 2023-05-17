@@ -107,13 +107,13 @@ post:
   # copyright: false # Whether to display copyright section on each post.
   # plainifyExcerpt: false # Format excerpt in HTML if false.
   featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: true # Count headings automatically.
+  # numberifyHeadings: true # Count headings automatically.
   # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
   numberifyHeadingsSeparator: . # The separator between of number and headings.
   # tocStyleType: decimal # The TOC's CSS list-style-type property.
   # imageTitleAsCaption: true
   panel: false # Disable the post panel.
-  # nav: false # Disable post navigations.
+  nav: false # Disable post navigations.
   # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
   # It supports only of the manual summaries spliting via <!--more-->.
   readMoreFromContent: true
@@ -264,5 +264,5 @@ topAppBar:
   # nav:
     # expand: true # Expand docs navigations.
 
-#feeds:
-  # content: true
+feeds:
+  content: true
