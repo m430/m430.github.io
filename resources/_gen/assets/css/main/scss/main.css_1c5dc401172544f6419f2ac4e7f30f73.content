@@ -15975,6 +15975,10 @@ table {
   }
 }
 
+.navbar-brand {
+  color: white;
+}
+
 /*!purgecss end ignore*/
 .accordion {
   --hbs-accordion-active-color: var(--hbs-primary);
