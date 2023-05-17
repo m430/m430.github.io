@@ -17,6 +17,7 @@ categories:
   - 技术
 tags: 
   - Github Pages
+  - Hugo
 images: [
   "https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305161623185.png?x-oss-process=image/quality,q_80/format,webp"
 ]
