@@ -40,10 +40,14 @@ images: [
 ## 二、配置apex顶级域
 ---
 
-配置顶级域，官方建议还设置一个`www`子域，这样Github Pages会自动把`www`子域重定向到顶级域上。打开阿里云，配置一个`CNAME`记录，配置如图：
+配置顶级域，官方建议还设置一个`www`子域，这样Github Pages会自动把`www`子域重定向到顶级域上。
+### 2.1 配置www子域CNAME
+
+打开阿里云，配置一个`CNAME`记录，配置如图：
 
 ![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171813923.png?x-oss-process=image/quality,q_80/format,webp)
 
+### 2.2 配置顶级域A记录
 然后配置顶级域，需要配置`A`记录，指向`Github Pages`的IPv4地址如下：
 
 ```
@@ -57,7 +61,11 @@ images: [
 
 ![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171813922.png?x-oss-process=image/quality,q_80/format,webp)
 
-1个`CNAME`记录，4个`A`记录。配置完成后，使用`dig`命令查看顶级域的`A`记录是否配置成功：
+1个`CNAME`记录，4个`A`记录。
+
+### 2.3 检查DNS解析
+
+配置完成后，使用`dig`命令查看顶级域的`A`记录是否配置成功：
 
 ```bash
 $ dig andyzheng.cc +noall +answer -t A
@@ -84,6 +92,8 @@ m430.github.io.		3600	IN	A	185.199.110.153
 m430.github.io.		3600	IN	A	185.199.109.153
 m430.github.io.		3600	IN	A	185.199.108.153
 ```
+
+### 2.4 设置自定义域名
 
 发现都已经生效。在站点仓库`Settings>Pages`下设置好顶级域，如图：
 
