@@ -41,7 +41,8 @@
       "span",
       "strong",
       "title",
-      "ul"
+      "ul",
+      "username"
     ],
     "classes": [
       "accordion",
@@ -321,6 +322,7 @@
       "w-auto"
     ],
     "ids": [
+      "-参考",
       "31-创建站点",
       "32-选择一个主题使用",
       "41-配置github-pages的action",
@@ -334,6 +336,7 @@
       "category-input",
       "featured-posts",
       "featured-posts-tab",
+      "github-pages自定义域名",
       "hugo配置giscus评论系统",
       "languages-select",
       "loadingSpinner",
@@ -342,6 +345,7 @@
       "post-comments",
       "post-content-body",
       "post-copyright",
+      "post-summary",
       "post-toc",
       "post-toc-container",
       "postTOC",
@@ -377,8 +381,11 @@
       "templateStat",
       "一github-pages介绍",
       "一什么是giscus",
+      "一支持的自定义域",
+      "一自定义域名介绍",
       "三静态生成站点",
       "二创建github-pages仓库",
+      "二配置apex顶级域",
       "二配置giscus",
       "五总结",
       "参考",
