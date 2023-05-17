@@ -14,7 +14,7 @@ keywords: Hugo, Bootstrap, Blog Theme
 
 logo: false # Logo image. Default to images/logo.webp.
 # logo: false # Disable Logo
-brand: Andy's Blog
+brand: Andy Zheng
 
 palette: indigo # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # Available palettes. Default to ALL. Empty array means disable.
@@ -225,7 +225,7 @@ actionsPanel:
 pwa:
   manifest:
     # name:  # Default to site title.
-    short_name: Andy's Blog
+    short_name: Andy Zheng
     # display: fullscreen # Default to standalone.
     # description:  # Default to site description.
     # theme_color: 

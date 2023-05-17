@@ -1,5 +1,5 @@
 baseURL: /
-title: Andy's blog
+title: Andy Zheng
 theme: hugo-theme-bootstrap
 copyright: 'Copyright © 2022-{year} Andy Zheng. All Rights Reserved.'
 defaultContentLanguage: zh-hans
