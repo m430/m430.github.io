@@ -1,0 +1,15 @@
+{{- $collapsed := default false .Site.Params.sidebar.collapsed }}
+<div class="accordion profile">
+  <div class="accordion-item card row text-center component">
+    <div class="card-body collapse accordion-collapse accordion-body d-lg-block{{ if not $collapsed }} show{{ end }}"
+      id="profile" aria-labelledby="profile-header">
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        {{- partial "sidebar/profile/avatar" . -}}
+      </div>
+      <div class="col-12 profile-meta">
+        {{- partial "sidebar/profile/meta" . -}}
+      </div>
+      {{- partial "sidebar/profile/social-links" . -}}
+    </div>
+  </div>
+</div>
