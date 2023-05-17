@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 博客
 menu:
   main:
@@ -6,4 +6,4 @@ menu:
     params:
       icon: '<i class="fas fa-fw fa-blog"></i>'
       description: '博客菜单描述'
----
+--- -->
