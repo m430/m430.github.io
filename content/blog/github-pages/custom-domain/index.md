@@ -26,7 +26,7 @@ images: [
 默认`Github Pages`的域名为`<username>.github.io`，我们肯定是希望拥有一个自己独立的域名，你可以去任何一个域名交易网站买一个自己喜欢的域名，配置到自己的博客上。通常的域名交易网站有：
 
 - [Godaddy](https://www.godaddy.com/)
-- [阿里云-万网](https://wanwang.aliyun.com/domain/)
+- [阿里云-万网](https://wanwang.aliyun.com/domain?source=5176.11533457&userCode=l3bvairs)
 - [腾讯云-DNSPod](https://dnspod.cloud.tencent.com/)
 
 这里我直接选择阿里云了，因为我的图床也在阿里云OSS上面，这样操作起来方便点。
