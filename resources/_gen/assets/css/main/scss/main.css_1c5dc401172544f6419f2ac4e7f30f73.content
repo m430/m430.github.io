@@ -15984,6 +15984,31 @@ table {
   font-display: swap;
 }
 
+.busuanzi {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.busuanzi .busuanzi__item {
+  padding: .125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.busuanzi .busuanzi__item .busuanzi__item--label {
+  font-size: 12.8px;
+  padding: .125rem 0;
+  font-style: italic;
+}
+
+.busuanzi .busuanzi__item .busuanzi__item--number {
+  font-size: 16.8px;
+  font-weight: 700;
+}
+
 @media (min-width: 992px) {
   .sidebar {
     overflow-y: initial;

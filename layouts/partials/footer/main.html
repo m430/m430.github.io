@@ -1,4 +1,5 @@
 <div class="row text-center{{ if .Site.Menus.footer }} text-lg-start{{ end }}">
+  {{- partial "footer/busuanzi" . -}}
   <div class="col-12 mt-2{{ if .Site.Menus.footer }} col-lg-3{{ end }}">
     {{- partialCached "footer/copyright" . -}}
     {{- partialCached "footer/powered-by" . -}}

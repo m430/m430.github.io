@@ -74,6 +74,7 @@ pinnedPostCount: 3 # The number of pinned posts.
 # Custom CSS and JS
 customCSS:
 customJS:
+  - //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 tocWordCount: 1 # TOC is displayed only if the post's word count exceeds this value.
 
