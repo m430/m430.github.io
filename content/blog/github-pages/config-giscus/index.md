@@ -95,7 +95,7 @@ giscus:
 
 支持使用Github账户登录，评论支持Markdown语法，简洁、美观。
 
-## 参考
+## 三、参考资料
 
 [giscus官网网站](https://giscus.app/zh-CN)
 

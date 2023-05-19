@@ -101,6 +101,6 @@ m430.github.io.		3600	IN	A	185.199.108.153
 
 点击保存的时候，Github Pages会对设置的域名进行DNS检查，检查成功就表示自定义域名生效了。欢迎大家去我的[博客](https://andyzheng.cc)参观。
 
-## 参考
+## 三、参考资料
 
 [关于自定义域名和 GitHub 页面 - GitHub 文档](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)

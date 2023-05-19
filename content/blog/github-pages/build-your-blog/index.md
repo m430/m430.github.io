@@ -141,7 +141,7 @@ hugo server
 
 Github Pages部署个人站点非常方便，配合静态工具生成框架，是个人搭建独立博客非常好的选择，如果你想搭建一个属于自己的个性独立博客，非常推荐这种方式。
 
-## 参考资料
+## 六、参考资料
 
 [创建 GitHub Pages 站点 - GitHub 文档](https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 

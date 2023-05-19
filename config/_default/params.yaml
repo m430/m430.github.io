@@ -81,7 +81,7 @@ titleCase: true # Capitalized title.
 
 viewer: true # Image Viewer
 
-# backgroundImage: ['/images/bg-light.png', '/images/bg-dark.png']
+# backgroundImage: ['/images/favicon.webp', '/images/favicon.webp']
 # rss: home # link the RSS button to homepage all the times.
 
 sidebar:
