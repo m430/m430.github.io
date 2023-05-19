@@ -1,3 +1,6 @@
+@import "_font_en.scss";
+@import "_font_zh.scss";
+
 .sidebar {
   @if $fixedSidebar {
     @include media-breakpoint-up(lg) {
@@ -8,4 +11,9 @@
 
 .navbar-brand {
   color: white;
+}
+
+:root {
+  // --#{$prefix}body-font-family: LXGWWenKai-Regular, JetBrainsMonoNL-Regular, sans-serif;
+  --#{$prefix}body-font-family: lxgwwenkai-regular, jetbrainsmono-regular, sans-serif;
 }

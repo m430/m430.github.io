@@ -174,12 +174,13 @@ giscus:
   category: "General" # required.
   categoryId: "DIC_kwDOJiE7bM4CWfPx" # required.
   # theme: "dark" # Default to auto.
+  # theme: "https://localhost:1313/assets/main/test.css"
   # mapping: "title" # Default to pathname.
   # inputPosition: "bottom" # Default to top.
   # reactions: false # Disable reactions.
   # metadata: true # Emit discussion metadata.
   # lang: "en" # Specify language, default to site language.
-  # lazyLoading: false # Default to true.
+  lazyLoading: false # Default to true.
 
 search:
   paginate: 5 # Pagination. Default to 10.
