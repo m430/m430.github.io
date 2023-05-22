@@ -23,8 +23,7 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.108.0
@@ -53,18 +52,6 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Check contents of public folder
-        run: ls -l public
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v1
-      #   with:
-      #     path: ./public
-
-  # Deployment job
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Install and configure Alibaba Cloud OSS CLI
         run: |
           curl -sSL https://gosspublic.alicdn.com/ossutil/1.7.2/ossutil64 -o /usr/local/bin/ossutil
@@ -75,6 +62,28 @@ jobs:
         run: |
           ossutil rm -r -f oss://${{ secrets.BUKET_NAME }}/ 
       
+      - name: Check contents of public folder
+        run: ls -l public
+      
       - name: Upload files to OSS
         run: |
           ossutil cp -r -f public oss://${{ secrets.BUKET_NAME }}/
+
+  # Deployment job
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Install and configure Alibaba Cloud OSS CLI
+  #       run: |
+  #         curl -sSL https://gosspublic.alicdn.com/ossutil/1.7.2/ossutil64 -o /usr/local/bin/ossutil
+  #         chmod +x /usr/local/bin/ossutil
+  #         ossutil config -e oss-cn-beijing.aliyuncs.com -i ${{ secrets.ACCESS_KEY_ID }} -k ${{ secrets.ACCESS_KEY_SECRET }}
+
+  #     - name: Delete old files in OSS
+  #       run: |
+  #         ossutil rm -r -f oss://${{ secrets.BUKET_NAME }}/ 
+      
+  #     - name: Upload files to OSS
+  #       run: |
+  #         ossutil cp -r -f public oss://${{ secrets.BUKET_NAME }}/
