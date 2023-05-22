@@ -71,7 +71,7 @@ jobs:
 
       - name: Delete old files in OSS
         run: |
-          ossutil rm oss://${{ secrets.BUKET_NAME }} --all
+          ossutil rm oss://${{ secrets.BUKET_NAME }}/ -r
       
       - name: Upload files to OSS
         run: |
