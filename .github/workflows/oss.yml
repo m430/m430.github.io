@@ -53,10 +53,6 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
 
   # Deployment job
   deploy:
@@ -71,8 +67,8 @@ jobs:
 
       - name: Delete old files in OSS
         run: |
-          ossutil rm oss://${{ secrets.BUKET_NAME }}/ -r
+          ossutil rm -r -f oss://${{ secrets.BUKET_NAME }}/ 
       
       - name: Upload files to OSS
         run: |
-          ossutil cp -r public oss://${{ secrets.BUKET_NAME }}/
+          ossutil cp -r -f public oss://${{ secrets.BUKET_NAME }}/
