@@ -53,6 +53,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Check contents of public folder
+        run: ls -l public
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v1
       #   with:
