@@ -62,7 +62,7 @@ jobs:
         run: |
           aliyun configure set --access-key-id ${{ secrets.ACCESS_KEY_ID }}
           aliyun configure set --access-key-secret ${{ secrets.ACCESS_KEY_SECRET }}
-          aliyun configure set --region ${{ secrets.ECS_REGION }}  # 替换为您的 ECS 地域
+          aliyun configure set --region cn-zhangjiakou  # 替换为您的 ECS 地域
 
       - name: Clear ECS remote path
         run: |
@@ -71,4 +71,4 @@ jobs:
       - name: Deploy to ECS
         run: |
           # 将文件上传到 ECS 目录
-          aliyun ecs UploadFiles --RegionId ${{ secrets.ECS_REGION }} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --LocalDirectory ./public --RemoteDirectory ${{ secrets.ECS_REMOTE_PATH }}
+          aliyun ecs UploadFiles --RegionId cn-zhangjiakou --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --LocalDirectory ./public --RemoteDirectory ${{ secrets.ECS_REMOTE_PATH }}
