@@ -17,13 +17,13 @@ tags:
   - Github Pages
   - Hugo
 images: [
-  "https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171618503.png?x-oss-process=image/quality,q_80/format,webp"
+  "https://cdn.jsdelivr.net/gh/m430/images@master/202305230956529.webp"
 ]
 ---
 
 # Hugo配置giscus评论系统
 
-上一篇 [Github Pages搭建个人博客](http://localhost:1313/blog/2023/05/build-your-blog/) 我们已经成功的用[Hugo](https://gohugo.io/)把自己的博客搭建在了Github Pages上。既然是博客，我们肯定是希望能够发表的文章能够跟读者有交互。[Hugo](https://gohugo.io/)可以很方便的集成多种评论系统，比如：
+上一篇 [Github Pages搭建个人博客](/blog/2023/05/build-your-blog/) 我们已经成功的用[Hugo](https://gohugo.io/)把自己的博客搭建在了Github Pages上。既然是博客，我们肯定是希望能够发表的文章能够跟读者有交互。[Hugo](https://gohugo.io/)可以很方便的集成多种评论系统，比如：
 
 - [Disqus](https://disqus.com/)
 - [Utterances](https://utteranc.es/)
@@ -37,7 +37,7 @@ images: [
 
 [Giscus](https://giscus.app/)是一个开源的轻量的评论系统，基于`Github Discussions`，特性如下：
 
-![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171618504.png?x-oss-process=image/quality,q_80/format,webp)
+![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956530.webp)
 
 ## 二、配置Giscus
 
@@ -46,7 +46,7 @@ images: [
 ### 2.1 安装Giscus
 首先在[Github Marketplace](https://github.com/marketplace)上搜索giscus，然后按照步骤进行安装：
 
-![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171618505.png?x-oss-process=image/quality,q_80/format,webp)
+![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956531.webp)
 
 ### 2.2 生成配置脚本
 
@@ -91,7 +91,7 @@ giscus:
 
 最后，你会在文章后面看到一个漂亮的评论模块：
 
-![](https://m430-blog.oss-cn-beijing.aliyuncs.com/images/202305171618506.png?x-oss-process=image/quality,q_80/format,webp)
+![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956532.webp)
 
 支持使用Github账户登录，评论支持Markdown语法，简洁、美观。
 
