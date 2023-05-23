@@ -60,15 +60,13 @@ jobs:
 
       - name: Configure Alibaba Cloud CLI
         run: |
-          aliyun configure set --access-key-id ${{ secrets.ACCESS_KEY_ID }}
-          aliyun configure set --access-key-secret ${{ secrets.ACCESS_KEY_SECRET }}
-          aliyun configure set --region cn-zhangjiakou  # 替换为您的 ECS 地域
+          aliyun configure set --access-key-id ${{ secrets.ACCESS_KEY_ID }} --access-key-secret ${{ secrets.ACCESS_KEY_SECRET }} --region ${{ secrets.ECS_REGION }}
 
       - name: Clear ECS remote path
         run: |
-          aliyun ecs DeleteFiles --RegionId cn-zhangjiakou --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --Force --Files ${{ secrets.ECS_REMOTE_PATH }}
+          aliyun ecs DeleteFiles --RegionId ${{ secrets.ECS_REGION }} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --Force --Files ${{ secrets.ECS_REMOTE_PATH }}
       
       - name: Deploy to ECS
         run: |
           # 将文件上传到 ECS 目录
-          aliyun ecs UploadFiles --RegionId cn-zhangjiakou --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --LocalDirectory ./public --RemoteDirectory ${{ secrets.ECS_REMOTE_PATH }}
+          aliyun ecs UploadFiles --RegionId ${{ secrets.ECS_REGION }} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --LocalDirectory ./public --RemoteDirectory ${{ secrets.ECS_REMOTE_PATH }}
