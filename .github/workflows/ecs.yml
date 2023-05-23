@@ -52,21 +52,21 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Download and install Alibaba Cloud CLI
-        run: |
-          curl -o aliyun-cli.tgz -L https://github.com/aliyun/aliyun-cli/releases/download/v3.0.164/aliyun-cli-linux-3.0.164-amd64.tgz
-          tar -zxvf aliyun-cli.tgz
-          sudo mv aliyun /usr/local/bin
 
-      - name: Configure Alibaba Cloud CLI
+      - name: Configure SSH key
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      
+      - name: Clear old files on ECS
         run: |
-          aliyun configure set --access-key-id ${{ secrets.ACCESS_KEY_ID }} --access-key-secret ${{ secrets.ACCESS_KEY_SECRET }} --region ${{ secrets.ECS_REGION }}
-
-      - name: Clear ECS remote path
-        run: |
-          aliyun ecs DeleteFiles --RegionId ${{ secrets.ECS_REGION }} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --Force --Files ${{ secrets.ECS_REMOTE_PATH }}
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.ECS_IP }} "rm -rf ${{ secrets.ECS_REMOTE_PATH }}/*"
       
       - name: Deploy to ECS
-        run: |
-          # 将文件上传到 ECS 目录
-          aliyun ecs UploadFiles --RegionId ${{ secrets.ECS_REGION }} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --LocalDirectory ./public --RemoteDirectory ${{ secrets.ECS_REMOTE_PATH }}
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.ECS_IP }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: public/
+          target: ${{ secrets.ECS_REMOTE_PATH }}
