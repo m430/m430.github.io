@@ -66,7 +66,7 @@ jobs:
 
       - name: Clear ECS remote path
         run: |
-          aliyun ecs DeleteFiles --RegionId ${{secrets.ECS_REGION}} --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --Force --Files ${{ secrets.ECS_REMOTE_PATH }}
+          aliyun ecs DeleteFiles --RegionId cn-zhangjiakou --InstanceIds ${{ secrets.ECS_INSTANCE_ID }} --Force --Files ${{ secrets.ECS_REMOTE_PATH }}
       
       - name: Deploy to ECS
         run: |
