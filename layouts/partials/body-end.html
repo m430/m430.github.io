@@ -1,0 +1,19 @@
+{{- partialCached "assets/main/js" . -}}
+{{- partialCached "assets/icons/js" . -}}
+{{- partial "assets/viewer/js" . -}}
+{{- partialCached "assets/algolia/js" . -}}
+{{- partial "assets/math/js" . -}}
+{{- partial "assets/diagram/js" . -}}
+{{- partial "plugins/addthis" . -}}
+{{- partialCached "assets/baidu-analytics" . -}}
+{{- partial "assets/search/js" . -}}
+{{- partial "assets/masonry/js" . -}}
+{{- partialCached "assets/docsearch/js" . -}}
+{{- partial "hooks/body-end" . -}}
+{{- partialCached "assets/service-worker/js" . -}}
+{{- if and .IsPage (not .IsHome) (default true .Site.Params.comment) (default true .Params.comment) }}
+{{- partialCached "assets/giscus/js" . -}}
+{{- end }}
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link rel="stylesheet" href="//jsdelivr.andyzheng.cc/gh/m430/assets@main/css/font_en.min.css">
+<link rel="stylesheet" href="//jsdelivr.andyzheng.cc/gh/m430/assets@main/css/font_zh.min.css">
