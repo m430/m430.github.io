@@ -17,7 +17,7 @@ tags:
   - Github Pages
   - Hugo
 images: [
-  "https://cdn.jsdelivr.net/gh/m430/images@master/202305230956529.webp"
+  "https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956529.webp"
 ]
 ---
 
@@ -37,7 +37,7 @@ images: [
 
 [Giscus](https://giscus.app/)是一个开源的轻量的评论系统，基于`Github Discussions`，特性如下：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956530.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956530.webp)
 
 ## 二、配置Giscus
 
@@ -46,7 +46,7 @@ images: [
 ### 2.1 安装Giscus
 首先在[Github Marketplace](https://github.com/marketplace)上搜索giscus，然后按照步骤进行安装：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956531.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956531.webp)
 
 ### 2.2 生成配置脚本
 
@@ -91,7 +91,7 @@ giscus:
 
 最后，你会在文章后面看到一个漂亮的评论模块：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956532.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956532.webp)
 
 支持使用Github账户登录，评论支持Markdown语法，简洁、美观。
 

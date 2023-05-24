@@ -16,7 +16,7 @@ categories:
 tags: 
   - Github Pages
 images: [
-  "https://cdn.jsdelivr.net/gh/m430/images@master/202305230956536.webp"
+  "https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956536.webp"
 ]
 ---
 
@@ -45,7 +45,7 @@ images: [
 
 打开阿里云，配置一个`CNAME`记录，配置如图：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956535.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956535.webp)
 
 ### 2.2 配置顶级域A记录
 然后配置顶级域，需要配置`A`记录，指向`Github Pages`的IPv4地址如下：
@@ -59,7 +59,7 @@ images: [
 
 阿里云上配置完成截图如下：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956534.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956534.webp)
 
 1个`CNAME`记录，4个`A`记录。
 
@@ -97,7 +97,7 @@ m430.github.io.		3600	IN	A	185.199.108.153
 
 发现都已经生效。在站点仓库`Settings>Pages`下设置好顶级域，如图：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956533.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956533.webp)
 
 点击保存的时候，Github Pages会对设置的域名进行DNS检查，检查成功就表示自定义域名生效了。欢迎大家去我的[博客](https://andyzheng.cc)参观。
 

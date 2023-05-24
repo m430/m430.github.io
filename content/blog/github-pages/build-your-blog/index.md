@@ -19,7 +19,7 @@ tags:
   - Github Pages
   - Hugo
 images: [
-  "https://cdn.jsdelivr.net/gh/m430/images@master/202305230956525.webp"
+  "https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956525.webp"
 ]
 ---
 ## 一、Github Pages介绍
@@ -31,7 +31,7 @@ Github Pages是Github提供的免费静态网站托管服务，可以很方便�
 
 首先，你需要在[Github](https://github.com)上创建一个仓库，个人博客仓库必须命名为`<username>.github.io`，这个非常重要。
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956524.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956524.webp)
 
 ## 三、静态生成站点
 
@@ -81,7 +81,7 @@ git remote add origin <your_blog_repo_github_url>
 
 你可以到[Hugo 主题](https://themes.gohugo.io/)下面去选择一个你喜欢的主题，主题非常丰富，这里我个人选择了主题[HBS](https://hbs.razonyang.com/)
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956523.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956523.webp)
 
 HBS很多功能已经帮你做好了，你只需要配置一下就可以了，是一个功能很完备的一个主题，选择好你喜欢的主题后，需要把主题下载到刚才创建的站点的`themes`目录下才可以让Hugo识别。你在站点根目录执行如下命令：
 
@@ -111,7 +111,7 @@ hugo server
 
 恭喜你，已经可以看到站点的最初样子了，比如我这里选择的主题是[HBS](https://hbs.razonyang.com/)，就可以看到如下：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956522.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956522.webp)
 
 看起来还是很精美的有没有。后续针对主题自定义就不在这里展开了，后面可以单独开一篇来讲。
 
@@ -125,7 +125,7 @@ hugo server
 
 进入`<username>.github.io`仓库的`Settings>Pages`页面，然后再`Build and deployment`下配置发布源为Github Actions，并选择Hugo的预设Action。如图所示：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956521.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956521.webp)
 
 配置好以后会再你的站点仓库下生成`.github/hugo.yml`文件，里面定义了自动化部署流程，新手不需要有任何改动，直接将它拉取到本地的仓库。
 
@@ -133,7 +133,7 @@ hugo server
 
 最后把本地的站点推送到Github即可。推送后会自动触发Github Actions的流程，在仓库的Pages配置页面下可以看到：
 
-![](https://cdn.jsdelivr.net/gh/m430/images@master/202305230956520.webp)
+![](https://jsdelivr.andyzheng.cc/gh/m430/images@master/202305230956520.webp)
 
 恭喜你，到这里，站点已经可以在互联网上被所有人访问了，点击`Visit site`，就可以访问自己的站点了。默认的站点域名就是仓库名`https://<username>.github.io`**。**
 
