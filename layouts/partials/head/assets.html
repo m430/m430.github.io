@@ -1,0 +1,23 @@
+{{- partialCached "assets/google-analytics" . -}}
+{{- partialCached "assets/google-adsense" . -}}
+{{- if eq .Site.Language.LanguageDirection "rtl" }}
+{{- partialCached "assets/main/css-rtl" . }}
+{{- else }}
+{{- partialCached "assets/main/css" . }}
+{{- end }}
+{{- partial "assets/math/css" . }}
+{{- partialCached "assets/viewer/css" . }}
+{{- partialCached "assets/docsearch/css" . -}}
+{{- partialCached "assets/plausible-analytics/js" . -}}
+{{- partial "assets/search/head" . }}
+{{- partial "assets/algolia/css" . }}
+<!-- 百度分析 -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?bb2565605af967e5abe394b441a7b664";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
