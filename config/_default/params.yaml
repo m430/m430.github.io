@@ -124,7 +124,7 @@ archive:
   # dateFormat: 01-02 # Archive date format. Default to Jan 2.
 
 analytics:
-  # baidu:  # Baidu Analytics
+  baidu: bb2565605af967e5abe394b441a7b664 # Baidu Analytics
 
 # Site verification
 siteVerification:
