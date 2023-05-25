@@ -168,11 +168,11 @@ creativeCommons:
   #moderation: false # Same as Staticman's moderation.
 
 # See https://giscus.app
-giscus:
-  repo: "m430/m430.github.io" # required.
-  repoId: "R_kgDOJiE7bA" # required.
-  category: "General" # required.
-  categoryId: "DIC_kwDOJiE7bM4CWfPx" # required.
+# giscus:
+  # repo: "m430/m430.github.io" # required.
+  # repoId: "R_kgDOJiE7bA" # required.
+  # category: "General" # required.
+  # categoryId: "DIC_kwDOJiE7bM4CWfPx" # required.
   # theme: "dark" # Default to auto.
   # theme: "https://localhost:1313/assets/main/test.css"
   # mapping: "title" # Default to pathname.
