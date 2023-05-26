@@ -1,0 +1,55 @@
+/* 字体 */
+@font-face {
+  font-family: 'ZhuZiAWan';
+  /* 字体名自定义即可 */
+  src: url('https://jsdelivr.andyzheng.cc/gh/m430/assets/font/ZhuZiAWan.woff2');
+  /* 字体文件路径 */
+  font-display: swap;
+}
+
+:root {
+  --az-theme: #6f42c1;
+  --az-blog-bg: #f7f9fe;
+  --az-border: #e3e3e3;
+  --az-white: #fff;
+  --az-xq: #A59ACA;
+  --az-zll: #5F479A;
+  --az-bd-rd: 6px;
+  --az-l-txt-nm: #444;
+  --az-l-txt-my-bg: #444;
+  --az-l-txt-my-cl: #fff;
+  --az-l-txt-tm: #666;
+  --az-strong-bg: #55585a;
+  --tk-content-bg: rgba(245, 245, 245, .8);
+  --fr-ft-cl: #6a737d;
+}
+
+body {
+  background-color: var(--az-blog-bg) !important;
+  font-family: ZhuZiAWan, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* header */
+#page-header.not-top-img #nav {
+  border-bottom: 1px solid var(--az-border);
+  box-shadow: none !important;
+}
+
+/* 公告图标 */
+.card-announcement .item-headline i {
+  color: var(--font-color) !important;
+}
+
+/* 阅读模式 */
+.read-mode #post {
+  background: var(--card-bg);
+}
+
+/* 导航 */
+#nav .menus_items .menus_item .menus_item_child li:hover {
+  background-color: var(--az-theme) !important;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:hover a {
+  color: var(--az-white) !important;
+}
