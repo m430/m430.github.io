@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'ZhuZiAWan';
   /* 字体名自定义即可 */
-  src: url('https://jsdelivr.andyzheng.cc/gh/m430/assets/font/ZhuZiAWan.woff2');
+  src: url('https://cdn.andyzheng.cc/font/ZhuZiAWan.woff2');
   /* 字体文件路径 */
   font-display: swap;
 }
@@ -22,6 +22,19 @@
   --az-strong-bg: #55585a;
   --tk-content-bg: rgba(245, 245, 245, .8);
   --fr-ft-cl: #6a737d;
+}
+
+[data-theme=dark] {
+  --az-theme: #6f42c1;
+  --az-blog-bg: #18181e;
+  --az-border: #444444;
+  --scrollbar-color: var(--az-border);
+  --az-l-txt-nm: #ddd;
+  --az-l-txt-my-bg: #A59ACA;
+  --az-l-txt-my-cl: #444;
+  --az-l-txt-tm: #999;
+  --tk-content-bg: rgba(40, 40, 40, .6);
+  --fr-ft-cl: #F7F7FA;
 }
 
 body {
@@ -52,4 +65,82 @@ body {
 
 #nav .menus_items .menus_item .menus_item_child li:hover a {
   color: var(--az-white) !important;
+}
+
+/* 文章列表 */
+#recent-posts>.recent-post-item {
+  height: 13em;
+}
+
+#recent-posts>.recent-post-item .post_cover {
+  width: 230px;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info {
+  width: initial;
+  flex: 1;
+}
+
+/* 文章  */
+.layout>div:first-child:not(.recent-posts) {
+  padding: 1rem 2.5rem;
+}
+
+#article-container a {
+  color: var(--az-theme) !important;
+}
+
+#article-container p {
+  margin-bottom: 10px;
+}
+
+#article-container figure.highlight {
+  margin: 0 0 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin: 14px 0 14px;
+  color: var(--text-highlight-color);
+  font-weight: bold;
+}
+
+#article-container img {
+  margin: 0 auto;
+}
+
+#post .post-copyright {
+  border-color: var(--az-border);
+}
+
+/* footer */
+#footer {
+  border-top: 1px solid var(--az-border);
+  background-color: var(--az-blog-bg) !important;
+}
+
+#footer-wrap,
+#footer-wrap a {
+  color: var(--font-color);
+}
+
+/* aside */
+@media screen and (min-width: 900px) {
+  #aside-content .sticky_layout {
+    top: 15px;
+  }
+}
+
+#aside-content .card-widget {
+  margin-top: 15px;
+}
+
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
+  color: var(--az-white);
 }
