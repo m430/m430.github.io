@@ -14,6 +14,7 @@
   --az-white: #fff;
   --az-xq: #A59ACA;
   --az-zll: #5F479A;
+  --az-theme-light: rgba(111, 66, 193, .2);
   --az-bd-rd: 6px;
   --az-l-txt-nm: #444;
   --az-l-txt-my-bg: #444;
@@ -143,4 +144,121 @@ h6 {
 #aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
   color: var(--az-white);
+}
+
+/* twikoo */
+#twikoo .tk-replies .tk-content {
+  padding: 14px 18px 0 !important;
+}
+
+#twikoo a {
+  color: var(--az-theme);
+  text-decoration: underline;
+}
+
+.tk-nick {
+  color: var(--az-theme) !important;
+  font-size: 1rem !important;
+  line-height: 32px;
+  margin-right: 4px;
+  text-decoration: none !important;
+}
+
+.tk-meta {
+  display: flex;
+  align-items: center;
+}
+
+.tk-tag-green {
+  margin: 0 4px 0 0;
+  background-color: #ffa53c !important;
+  color: var(--az-white) !important;
+  border-color: #ffa53c !important;
+  padding: 0 .4em !important;
+  border-radius: 4px !important;
+}
+
+.tk-input .el-textarea__inner {
+  min-height: 120px !important;
+}
+
+.tk-extras {
+  margin-top: 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.tk-extras .tk-extra {
+  border: 1px solid var(--az-border);
+  padding: 6px;
+  border-radius: 4px;
+  margin-right: 6px !important;
+}
+
+.tk-replies>.tk-comment {
+  border-top: 1px dashed var(--az-border);
+  padding-top: 0.7rem;
+  margin-top: 4px;
+}
+
+#twikoo .tk-content {
+  background: var(--tk-content-bg);
+  padding: 0 18px;
+  border-radius: 10px;
+}
+
+.tk-icon.__comments,
+.tk-action-icon,
+.tk-action-count {
+  color: var(--az-theme) !important;
+  cursor: pointer !important;
+}
+
+.twikoo .el-input__inner:focus,
+.twikoo .el-textarea__inner:focus {
+  border-color: var(--az-theme) !important;
+}
+
+.twikoo .el-button:not(.el-button--primary):not(.el-button--text):focus,
+.twikoo .el-button:not(.el-button--primary):not(.el-button--text):hover {
+  color: var(--az-theme) !important;
+  border-color: var(--az-theme) !important;
+  background-color: var(--az-theme-light) !important;
+}
+
+.el-button--text {
+  color: var(--az-white) !important;
+}
+
+.el-button--primary {
+  background-color: var(--az-theme) !important;
+  border-color: var(--az-theme) !important;
+}
+
+.tk-expand {
+  border: 1px solid var(--az-border);
+  border-radius: 10px;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+
+.tk-expand:hover {
+  background: var(--az-theme) !important;
+  color: var(--az-white);
+}
+
+.tk-admin {
+  background: rgba(0, 0, 0, 0.80) !important;
+}
+
+.tk-panel .tk-content {
+  color: var(--font-color);
+}
+
+.tk-pagination-pager.__current {
+  background-color: var(--az-theme) !important;
+}
+
+.tk-admin-container {
+  position: fixed !important;
+  z-index: 1000;
 }

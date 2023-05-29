@@ -486,7 +486,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://artalk.andyzheng.cc
   region:
   visitor: false
   option:
